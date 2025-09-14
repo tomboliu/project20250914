@@ -154,8 +154,14 @@ git rm --cache README.md
 git restore --staged README.md
 ```
 
-> nl -ba README.md | sed -n '30,45p'
-> git reset --soft HEAD~1
-> git add README.md
-> git commit -m "Initial commit with clean README"
+> nl -ba README.md | sed -n '30,45p' <br/>
+> git reset --soft HEAD~1 <br/>
+> git add README.md <br/>
+> git commit -m "Initial commit with clean README" <br/>
 
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
