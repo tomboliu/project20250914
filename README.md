@@ -119,9 +119,43 @@ branch 'main' set up to track 'origin/main'.
 ```bash
 git log --oneline
 ```
+```output
+f019ee2 (HEAD -> main, origin/main) Initial commit with clean README
+2d46494 Initial commit
+```
 
-nl -ba README.md | sed -n '30,45p'
-git reset --soft HEAD~1
-git add README.md
-git commit -m "Initial commit with clean README"
+8. 檢查地端專案資訊
+```bash
+git config --list
+```
+```output
+user.email=tomliu6116@hotmail.com
+user.name=Tom Liu
+init.defaultbranch=main
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=git@github.com:tomboliu/project20250914.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+```
+
+9.
+```bash
+git status
+```
+
+```bash
+# 將檔案從 staging area 移除，等 commit 時，會刪除此檔案
+git rm --cache README.md
+# 將檔案從 staging area 移除，等 commit 時，不會刪除此檔案
+git restore --staged README.md
+```
+
+> nl -ba README.md | sed -n '30,45p'
+> git reset --soft HEAD~1
+> git add README.md
+> git commit -m "Initial commit with clean README"
 
