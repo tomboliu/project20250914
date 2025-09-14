@@ -153,6 +153,24 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
+50.
+```bash
+git add .
+git commit -m "寫筆記"
+git push
+``` 
+```output
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 452 bytes | 452.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:tomboliu/project20250914.git
+   38bdb80..890018a  main -> main
+```
+
 99. 補充說明
 
 ```bash

@@ -1,0 +1,6 @@
+# ...existing code...
+
+$base64 = Get-Content -Path "c:\Users\user\Desktop\pwsh\gear.b64" -raw
+$base64 = $base64 -replace '^data:image\/(png|jpg);base64,', ''
+[IO.File]::WriteAllBytes("c:\Users\user\Desktop\pwsh\output.png", [Convert]::FromBase64String($base64))
+# ...existing code...
