@@ -142,10 +142,18 @@ branch.main.remote=origin
 branch.main.merge=refs/heads/main
 ```
 
-9.
+9. 檢查 Repository 狀態
 ```bash
 git status
 ```
+```output
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+99. 補充說明
 
 ```bash
 # 將檔案從 staging area 移除，等 commit 時，會刪除此檔案
